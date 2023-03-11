@@ -1,4 +1,4 @@
-import 'todolist/styles/globals.css'
+import 'todolist/styles/globals.scss'
 import type { AppProps } from 'next/app'
 
 export default function App({ Component, pageProps }: AppProps) {

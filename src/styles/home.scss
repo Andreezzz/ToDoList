@@ -1,0 +1,103 @@
+.ToDoList {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background-image: linear-gradient(45deg,
+			hsl(240deg 100% 20%) 0%,
+			hsl(289deg 100% 21%) 11%,
+			hsl(315deg 100% 27%) 22%,
+			hsl(329deg 100% 36%) 33%,
+			hsl(337deg 100% 43%) 44%,
+			hsl(357deg 91% 59%) 56%,
+			hsl(17deg 100% 59%) 67%,
+			hsl(34deg 100% 53%) 78%,
+			hsl(45deg 100% 50%) 89%,
+			hsl(55deg 100% 50%) 100%);
+
+	.block {
+		background-color: #fafafa;
+		margin: auto;
+		padding: 3rem 4rem;
+		border-radius: 20px;
+		box-shadow: 7px 7px 20px rgb(19, 19, 19);
+		height: 500px;
+
+		h1 {
+			text-align: center;
+			font-size: 35px;
+			padding: 0 2.1rem;
+		}
+
+		.form {
+			display: flex;
+			flex-direction: column;
+			padding: 2rem 0;
+
+			.in {
+				display: flex;
+				flex-direction: column;
+				row-gap: 15px;
+				padding-bottom: 1.5rem;
+
+				input {
+					background-color: transparent;
+					height: 2rem;
+					border: none;
+					border-bottom: 1px solid black;
+					text-align: center;
+				}
+
+				button {
+					padding: .5rem 1rem;
+					border-radius: 10px;
+					position: relative;
+					transition: .2s ease-in;
+					border: none;
+					z-index: 1;
+				}
+
+				button:hover {
+					background-color: #ff7575;
+				}
+
+				// select {
+				// 	padding: .5rem 1rem;
+				// 	border: 2px solid black;
+				// 	border-radius: 10px;
+				// }
+			}
+
+			.list {
+				height: 170px;
+				background-color: rgb(212, 212, 212);
+				border-radius: 10px;
+				overflow: auto;
+				padding: .5rem .5rem;
+				display: flex;
+				flex-direction: column;
+				row-gap: .5rem;
+
+
+				input {
+					padding: .3rem .8rem;
+					border-radius: 5px;
+					border: none;
+					margin-right: .25rem;
+				}
+
+				button {
+					border: none;
+					padding: .3rem .6rem;
+					border-radius: 5px;
+					transition: .2s ease-in;
+				}
+
+				button:hover {
+					background-color: #ffcd60;
+				}
+			}
+		}
+	}
+
+}
