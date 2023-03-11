@@ -15,8 +15,6 @@ export default function Home() {
     if (localStorage.getItem('tareas')) {
       xd = JSON.parse( localStorage.getItem('tareas') );
       setTareas(xd);
-    } else {
-      console.log("xd")
     }
   }, [])
 
