@@ -11,10 +11,10 @@ export default function Home() {
   const [valor, setValor] = useState('')
   
   useEffect(() => {
-    let xd:string[];
+    let xd:unknown;
     if (localStorage.getItem('tareas')) {
-      xd = JSON.parse( localStorage.getItem('tareas') );
-      setTareas(xd);
+      xd = localStorage.getItem('tareas');
+      setTareas(JSON.parse(xd as string));
     }
   }, [])
 
